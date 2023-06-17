@@ -1,0 +1,88 @@
+@media (min-width: 768px) {
+
+    /**Main**/
+
+    /**Section 1**/
+    .section-one-h-one {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    .section-one-button {
+        margin-top: 36px;
+    }
+
+    /**Section 2**/
+
+    .section-two-items {
+        text-align: left;
+    }
+
+    .list-principles {
+        gap: 72px 24px;
+    }
+
+    .element-list-principles {
+        width: calc((100% - 24px) / 2);
+    }
+
+    /**Section 3**/
+
+    /**Section 4**/
+
+    .list-four-cardsbackground {
+        gap: 64px 24px;
+    }
+
+    /*Customers*/
+
+    .customer-list {
+        /*padding-left: 108px;
+        padding-right: 108px;*/
+        gap: 72px 24px;
+    }
+
+    .icons-customer {
+        width: calc((100% - 48px) / 3);
+    }
+
+    /**Footer**/
+
+    .footer-container {
+        padding-left: 108px;
+    }
+
+    .container-without-subscribe {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 24px;
+    }
+
+    .footer-logos {
+        justify-content: left;
+    }
+
+    .footer-soc-med {
+        text-align: left;
+    }
+
+    .container-subscribe {
+        margin-bottom: 72px;
+    }
+
+    .form-footer {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
+    .footer-modal-button {
+        margin: 0;
+    }
+}
