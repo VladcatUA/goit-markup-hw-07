@@ -1,5 +1,40 @@
 @media (min-width: 1158px) {
 
+    .container {
+        max-width: 1158px;
+    }
+
+    .list-address {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .list-header {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .list-header,
+    .list-address {
+        gap: 40px;
+    }
+
+    .logo-header {
+        margin-right: 76px;
+    }
+
+    .header-address {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .address-items {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        padding: 24px 0;
+    }
+
     /**Main**/
 
     /**Section 1**/
