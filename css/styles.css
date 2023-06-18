@@ -142,10 +142,10 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: var(--background-color);
     z-index: 2;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -163,8 +163,8 @@ img {
 }
 
 .button-close-menu {
-    min-height: 40px;
-    min-width: 40px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,6 +175,31 @@ img {
     border: none;
     border-radius: 50%;
     outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: #E7E9FC;
+    margin-left: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close-menu:hover,
+.button-close-menu:focus {
+    background: #404BBF;
+    border: none;
+}
+
+.button-close-menu:hover .close-back,
+.button-close-menu:focus .close-back {
+    background: #404BBF;
+    fill: #FFFFFF;
+}
+
+.close-back {
+    fill: var(--color-darkbackground);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-open-menu {
@@ -206,16 +231,99 @@ img {
 
 /**Modalpage**/
 
-.modal-header-nav,
-.modal-header-address {
-    flex-wrap: wrap;
+.modal-page-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    overflow: scroll;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-backdrop-modal);
+    padding: 80px 24px 40px 40px;
 }
+
 
 .modal-list-header,
 .modal-list-address {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.modal-list-header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.modal-header-items {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--color-nav-titles);
+}
+
+.modal-list-address {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.modal-tel-items {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: normal;
+    font-style: normal;
+    color: var(--color-soc-icons);
+}
+
+@media (min-width: 428px) {
+    .modal-tel-items {
+        font-size: 36px;
+        line-height: 1.11;
+    }
+}
+
+.modal-email-items {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: normal;
+    font-style: normal;
+    color: var(--color-text-address);
+}
+
+.modal-list-soc-icons {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 36px;
+    /*gap: calc((100% - 168px) / 3);*/
+}
+
+@media (min-width: 428px) {
+    .modal-list-soc-icons {
+        width: 328px;
+        padding-right: 0px;
+    }
+}
+
+.modal-address-socmedia {
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
 }
 
 /**Main**/
@@ -618,15 +726,20 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
+    width: 300px;
     min-height: 584px;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    ;
     transform: translate(-50%, -50%) scale(1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--color-backdrop-modal);
     padding: 72px 24px 24px 24px;
+}
+
+@media (min-width: 428px) {
+    .modal {
+        width: 392px;
+    }
 }
 
 .modal-close {
@@ -662,7 +775,7 @@ img {
 }
 
 .close-back {
-    fill: currentColor;
+    fill: var(--color-darkbackground);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -674,7 +787,6 @@ img {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-nav-titles);
-
 }
 
 .modal-field {
@@ -739,10 +851,16 @@ img {
 }
 
 .modal-text {
-    height: 120px;
+    height: 100px;
     resize: none;
     color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
+}
+
+@media (min-width: 428px) {
+    .modal-text {
+        height: 120px;
+    }
 }
 
 .modal-verification {

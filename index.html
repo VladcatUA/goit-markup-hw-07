@@ -69,43 +69,101 @@
       </div>
 
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button type="button" class="button-close-menu js-close-menu">
-          <svg class="close-back" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
+        <div class="modal-page-menu">
+          <button type="button" class="button-close-menu js-close-menu">
+            <svg class="close-back" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
 
-        <nav class="modal-header-nav">
-          <ul class="modal-list-header">
-            <li class="modal-elements-header">
-              <a href="./index.html" class="modal-header-items link">Studio</a>
-            </li>
-            <li class="modal-elements-header">
-              <a href="./portfolio.html" class="modal-header-items link"
-                >Portfolio</a
-              >
-            </li>
-            <li class="modal-elements-header">
-              <a href="" class="modal-header-items link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="modal-header-address">
-          <ul class="modal-list-address">
-            <li class="modal-elements-header">
-              <a
-                href="mailto:info@devstudio.com"
-                class="modal-address-items link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="modal-elements-header">
-              <a href="tel:+110001111111" class="modal-address-items link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <nav class="modal-header-nav">
+            <ul class="modal-list-header">
+              <li class="modal-elements-header">
+                <a href="./index.html" class="modal-header-items link"
+                  >Studio</a
+                >
+              </li>
+              <li class="modal-elements-header">
+                <a href="./portfolio.html" class="modal-header-items link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="modal-elements-header">
+                <a href="" class="modal-header-items link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="modal-address-socmedia">
+            <address class="modal-header-address">
+              <ul class="modal-list-address">
+                <li class="modal-elements-header">
+                  <a href="tel:+110001111111" class="modal-tel-items link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="modal-elements-header">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="modal-email-items link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="modal-list-soc-icons list">
+              <li class="icon-team-member">
+                <a
+                  href=""
+                  class="soc-icon-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="soc-icon-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-team-member">
+                <a
+                  href=""
+                  class="soc-icon-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="soc-icon-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-team-member">
+                <a
+                  href=""
+                  class="soc-icon-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="soc-icon-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-team-member">
+                <a
+                  href=""
+                  class="soc-icon-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="soc-icon-item" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -719,3 +777,41 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+/*Modalmenu HTML*/
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button type="button" class="button-close-menu js-close-menu">
+    <svg class="close-back" width="8" height="8">
+      <use href="./images/icons.svg#icon-close-black"></use>
+    </svg>
+  </button>
+
+  <nav class="modal-header-nav">
+    <ul class="modal-list-header">
+      <li class="modal-elements-header">
+        <a href="./index.html" class="modal-header-items link">Studio</a>
+      </li>
+      <li class="modal-elements-header">
+        <a href="./portfolio.html" class="modal-header-items link">Portfolio</a>
+      </li>
+      <li class="modal-elements-header">
+        <a href="" class="modal-header-items link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+  <address class="modal-header-address">
+    <ul class="modal-list-address">
+      <li class="modal-elements-header">
+        <a href="mailto:info@devstudio.com" class="modal-address-items link"
+          >info@devstudio.com</a
+        >
+      </li>
+      <li class="modal-elements-header">
+        <a href="tel:+110001111111" class="modal-address-items link"
+          >+11 (000) 111-11-11</a
+        >
+      </li>
+    </ul>
+  </address>
+</div>
