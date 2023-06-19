@@ -67,7 +67,7 @@
           </svg>
         </button>
       </div>
-
+      <!--Modal mobile menu-->
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="modal-page-menu">
           <button type="button" class="button-close-menu js-close-menu">
@@ -79,7 +79,7 @@
           <nav class="modal-header-nav">
             <ul class="modal-list-header">
               <li class="modal-elements-header">
-                <a href="./index.html" class="modal-header-items link"
+                <a href="./index.html" class="modal-header-items link current"
                   >Studio</a
                 >
               </li>
@@ -244,6 +244,10 @@
           <ul class="list list-section-three">
             <li class="element-section-three">
               <img
+                srcset="
+                  ./images/img-computer.jpg    1x,
+                  ./images/img-computer-2x.jpg 2x
+                "
                 src="./images/img-computer.jpg"
                 alt="Computer interface"
                 width="360"
@@ -253,6 +257,10 @@
             </li>
             <li class="element-section-three">
               <img
+                srcset="
+                  ./images/img-phones.jpg    1x,
+                  ./images/img-phones-2x.jpg 2x
+                "
                 src="./images/img-phones.jpg"
                 alt="3 Phones"
                 width="360"
@@ -262,6 +270,10 @@
             </li>
             <li class="element-section-three">
               <img
+                srcset="
+                  ./images/img-computer-phone.jpg    1x,
+                  ./images/img-computer-phone-2x.jpg 2x
+                "
                 src="./images/img-computer-phone.jpg"
                 alt="Computer and phone"
                 width="360"
@@ -280,6 +292,10 @@
           <ul class="list list-four-cardsbackground">
             <li class="section-four-cardsbackground">
               <img
+                srcset="
+                  ./images/img-Mark-Guerrero.jpg    1x,
+                  ./images/img-Mark-Guerrero-2x.jpg 2x
+                "
                 src="./images/img-Mark-Guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -343,6 +359,10 @@
             </li>
             <li class="section-four-cardsbackground">
               <img
+                srcset="
+                  ./images/img-Tom-Ford.jpg    1x,
+                  ./images/img-Tom-Ford-2x.jpg 2x
+                "
                 src="./images/img-Tom-Ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -406,6 +426,10 @@
             </li>
             <li class="section-four-cardsbackground">
               <img
+                srcset="
+                  ./images/img-Camila-Garcia.jpg    1x,
+                  ./images/img-Camila-Garcia-2x.jpg 2x
+                "
                 src="./images/img-Camila-Garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -469,6 +493,10 @@
             </li>
             <li class="section-four-cardsbackground">
               <img
+                srcset="
+                  ./images/img-Daniel-Wilson.jpg    1x,
+                  ./images/img-Daniel-Wilson-2x.jpg 2x
+                "
                 src="./images/img-Daniel-Wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -534,7 +562,7 @@
         </div>
       </section>
 
-      <!--Section 5-->
+      <!--Section 5 Customer-->
       <section class="section-five">
         <div class="container">
           <h2 class="titles-h-two">Customers</h2>
@@ -777,41 +805,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-/*Modalmenu HTML*/
-
-<div class="menu-container js-menu-container" id="mobile-menu">
-  <button type="button" class="button-close-menu js-close-menu">
-    <svg class="close-back" width="8" height="8">
-      <use href="./images/icons.svg#icon-close-black"></use>
-    </svg>
-  </button>
-
-  <nav class="modal-header-nav">
-    <ul class="modal-list-header">
-      <li class="modal-elements-header">
-        <a href="./index.html" class="modal-header-items link">Studio</a>
-      </li>
-      <li class="modal-elements-header">
-        <a href="./portfolio.html" class="modal-header-items link">Portfolio</a>
-      </li>
-      <li class="modal-elements-header">
-        <a href="" class="modal-header-items link">Contacts</a>
-      </li>
-    </ul>
-  </nav>
-  <address class="modal-header-address">
-    <ul class="modal-list-address">
-      <li class="modal-elements-header">
-        <a href="mailto:info@devstudio.com" class="modal-address-items link"
-          >info@devstudio.com</a
-        >
-      </li>
-      <li class="modal-elements-header">
-        <a href="tel:+110001111111" class="modal-address-items link"
-          >+11 (000) 111-11-11</a
-        >
-      </li>
-    </ul>
-  </address>
-</div>
