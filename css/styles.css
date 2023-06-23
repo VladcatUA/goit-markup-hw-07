@@ -1020,9 +1020,19 @@ img {
 }
 
 .list-portfolio-card {
+    display: flex;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+
+    .list-portfolio-card {
+        width: 396px;
+    }
 }
 
 .container-potfolio-cards {
@@ -1031,9 +1041,6 @@ img {
     border-top: none;
 }
 
-.portfolio-cardsbackground {
-    width: calc((100% - 48px) / 3);
-}
 
 .portfolio-cardsbackground:hover .portfolio-cover-text {
     transform: translateY(0%);

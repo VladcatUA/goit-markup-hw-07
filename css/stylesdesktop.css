@@ -135,7 +135,6 @@
         padding-bottom: 120px;
     }
 
-
     .section-four-cardsbackground {
         width: calc((100% - 72px) / 4);
     }
@@ -205,4 +204,13 @@
     .footer-input {
         width: 264px;
     }
+
+    /*Portfolio*/
+    /*Buttons*/
+
+    /*Cards*/
+    .portfolio-cardsbackground {
+        width: calc((100% - 48px) / 3);
+    }
+
 }

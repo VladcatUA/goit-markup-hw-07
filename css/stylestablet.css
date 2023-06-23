@@ -189,6 +189,14 @@
     .footer-modal-button {
         margin: 0;
     }
+
+    /*Portfolio*/
+    /*Buttons*/
+
+    /*Cards*/
+    .portfolio-cardsbackground {
+        width: calc((100% - 24px) / 2);
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -204,4 +212,9 @@
     .list-principles {
         max-width: 736px;
     }
+
+    .list-portfolio-card {
+        width: 736px;
+    }
+
 }
