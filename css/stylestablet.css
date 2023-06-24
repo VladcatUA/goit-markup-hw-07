@@ -5,11 +5,6 @@
     }
 
     /**Header**/
-    .header {
-        border-bottom: 1px solid #E7E9FC;
-        background-color: var(--background-color);
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    }
 
     .header-container {
         display: flex;
@@ -192,6 +187,15 @@
 
     /*Portfolio*/
     /*Buttons*/
+    .section-five-buttons {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .list-five-buttons {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
 
     /*Cards*/
     .portfolio-cardsbackground {
@@ -214,7 +218,15 @@
     }
 
     .list-portfolio-card {
+        justify-content: flex-start;
         width: 736px;
+        row-gap: 72px;
     }
+
+    .portfolio-photos {
+        width: 356px;
+    }
+
+
 
 }

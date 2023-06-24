@@ -99,6 +99,11 @@ img {
 }
 
 /**Header**/
+.header {
+    border-bottom: 1px solid #E7E9FC;
+    background-color: var(--background-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
 .logo-header {
     padding-top: 24px;
@@ -982,14 +987,15 @@ img {
 /**List buttons**/
 
 .section-five-buttons {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .list-five-buttons {
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+    margin-bottom: 48px;
 }
 
 .button-items {
@@ -1022,10 +1028,26 @@ img {
 .list-portfolio-card {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     row-gap: 48px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 427px) {
+
+    .list-portfolio-card {
+        width: 290px;
+    }
+
+    .portfolio-cardsbackground {
+        width: 290px;
+    }
+
+    .portfolio-photos {
+        width: 290px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1085,7 +1107,27 @@ img {
 .portfolio-photos {}
 
 .portfolio-items {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-nav-titles);
     margin-bottom: 8px;
 }
 
-.portfolio-text {}
+.portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-text-address);
+
+}
+
+@media (max-width: 427px) {
+
+    .portfolio-items {
+        font-size: 17px;
+    }
+
+}

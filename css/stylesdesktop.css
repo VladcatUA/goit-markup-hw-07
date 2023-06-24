@@ -207,10 +207,21 @@
 
     /*Portfolio*/
     /*Buttons*/
+    .section-five-buttons {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .list-five-buttons {
+        margin-bottom: 72px;
+    }
 
     /*Cards*/
     .portfolio-cardsbackground {
         width: calc((100% - 48px) / 3);
     }
 
+    .portfolio-photos {
+        width: 360px;
+    }
 }
